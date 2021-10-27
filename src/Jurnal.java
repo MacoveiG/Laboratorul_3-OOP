@@ -1,19 +1,19 @@
-public class Carte extends CarteForm {
+public class Jurnal extends CarteForm{
 
-    public Carte(String autor, String denumirea, String editura, int anul, int nrFoi) {
+    protected Jurnal(String autor, String denumirea, String editura, int anul, int nrFoi) {
         super(autor, denumirea, editura, anul, nrFoi);
     }
 
     @Override
     String marime() {
-        if (nrFoi < 100) return "mica";
-        else if (nrFoi < 1000) return "mijlocie";
+        if (nrFoi < 10) return "mica";
+        else if (nrFoi < 50) return "mijlocie";
         else return "mare";
     }
 
     @Override
     public String toString() {
-        return "Carte{" +
+        return "Jurnal{" +
                 "Autor='" + autor + '\'' +
                 ", Denumirea='" + denumirea + '\'' +
                 ", Editura='" + editura + '\'' +

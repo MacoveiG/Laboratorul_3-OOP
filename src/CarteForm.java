@@ -13,7 +13,7 @@ public abstract class CarteForm {
         this.nrFoi = nrFoi;
     }
 
-    abstract String Marime();
+    abstract String marime();
 
     public String getAutor() {
         return autor;
